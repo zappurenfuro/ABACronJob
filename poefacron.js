@@ -15,6 +15,9 @@ const visitWebsite = async () => {
   try {
     const response = await axios.get('https://albionbalanceassistance-1.onrender.com/');
     console.log(`Visited website. Status Code: ${response.status}`);
+
+    const response2 = await axios.get('https://me-log.onrender.com/');
+    console.log(`Visited website 2. Status Code: ${response2.status}`);
   } catch (error) {
     console.error('Error visiting website:', error.message);
   }
