@@ -21,6 +21,9 @@ const visitWebsite = async () => {
 
     const response3 = await axios.get('https://lgrhelperapi.onrender.com/');
     console.log(`Visited website 3. Status Code: ${response3.status}`);
+
+    const response4 = await axios.get('https://lgr-helperapi.onrender.com/');
+    console.log(`Visited website 3. Status Code: ${response4.status}`);
   } catch (error) {
     console.error('Error visiting website:', error.message);
   }
