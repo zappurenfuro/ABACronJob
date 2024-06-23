@@ -19,13 +19,23 @@ const visitWebsite = async () => {
     const response2 = await axios.get('https://lgrhelper.onrender.com/');
     console.log(`Visited website 2. Status Code: ${response2.status}`);
 
+
+  } catch (error) {
+    console.error('Error visiting website:', error.message);
+  }
+  try {
     const response3 = await axios.get('https://lgrhelperapi.onrender.com/');
     console.log(`Visited website 3. Status Code: ${response3.status}`);
 
-    const response4 = await axios.get('https://lgr-helperapi.onrender.com/');
-    console.log(`Visited website 3. Status Code: ${response4.status}`);
   } catch (error) {
-    console.error('Error visiting website:', error.message);
+    console.error('Error visiting website 3:', error.message);
+  }
+  try {
+    const response4 = await axios.get('https://lgr-helperapi.onrender.com/');
+    console.log(`Visited website 4. Status Code: ${response4.status}`);
+
+  } catch (error) {
+    console.error('Error visiting website 4:', error.message);
   }
 };
 
