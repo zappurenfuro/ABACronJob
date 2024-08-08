@@ -24,7 +24,7 @@ const visitWebsite = async () => {
     console.error('Error visiting website:', error.message);
   }
   try {
-    const response3 = await axios.get('https://lgrhelperapi.onrender.com/');
+    const response3 = await axios.get('https://poefa-bot.onrender.com/');
     console.log(`Visited website 3. Status Code: ${response3.status}`);
 
   } catch (error) {
