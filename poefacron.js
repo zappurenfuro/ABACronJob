@@ -31,7 +31,7 @@ const visitWebsite = async () => {
     console.error('Error visiting website 3:', error.message);
   }
   try {
-    const response4 = await axios.get('https://lgr-helperapi.onrender.com/');
+    const response4 = await axios.get('https://api.poefa.xyz/calculate-prices/');
     console.log(`Visited website 4. Status Code: ${response4.status}`);
 
   } catch (error) {
@@ -39,5 +39,5 @@ const visitWebsite = async () => {
   }
 };
 
-// Schedule to run every 3 minutes
-setInterval(visitWebsite, 180000);
+// Schedule to run every 4 minutes
+setInterval(visitWebsite, 240000);
